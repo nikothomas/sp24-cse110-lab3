@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="title" content="Meeting Minutes">
+    <title>Meeting Minutes</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+</head>
+<body>
+<header>
+    <h1>Meeting Minutes LLC Formation</h1>
+    <h2>Date: 4/15/99 </h2>
+    <h2>Topic: First Meeting </h2>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="#section1">Attendance</a></li>
+            <li><a href="#section2">Agenda</a></li>
+            <li><a href="#section3">Unfinished Business</a></li>
+            <li><a href="#section4">New Business</a></li>
+            <li><a href="#section5">Miscellaneous</a></li>
+            <li><a href="#section6">Our Founder</a></li>
+            <li><a href="#section7">Recording</a></li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+
+<main>
+    <section id="section1">
+        <h2>Attendence</h2>
+        <p>Nikolas, Icarus, Paul</p>
+    </section>
+
+    <section id="section2">
+        <h2>Agenda</h2>
+        <ul>
+            <li>Get familiar with <strong>law</strong>. Very important!</li>
+            <li>Exploit resources</li>
+            <li>Profit</li>
+            <li><b>Suppress resistance</b> Not critical at the moment.</li>
+        </ul>
+    </section>
+    <section id="section3">
+        <h3>Unfinished Business</h3>
+        <p>Being nefarious</p>
+    </section>
+    <section id="section4">
+        <h3>New Business</h3>
+        <ol>
+            <li>Find resources to extract</li>
+            <li>Create <em>schedule</em> for next meetings</li>
+            <li>Need to figure out <i>who</i> is going to take the fall for this</li>
+            <li>Get  &block;&block;&block;&block;&block;&block; on the phone<br>They've been ignoring us</li>
+        </ol>
+    </section>
+    <section id="section5">
+        <h3>Miscellaneous</h3>
+        <p><span>Icarus cannot make it to the next meeting, and would like to postpone it.</span></p>
+    </section>
+    <section id="section6">
+        <h3>Our Founder</h3>
+        <img src="matrix-architect.png">
+        <details>
+            <summary>Learn more about this image.</summary>
+            <p>Image sourced from: https://matrix4humans.com/the-matrix-architect/</p>
+        </details>
+    </section>
+    <section id="section7">
+        <h3>Recording</h3>
+        <video controls>
+            <source src="meeting.mp4" type="video/mp4">
+        </video>
+        <details>
+            <summary>Learn more about this video.</summary>
+            <p>Video sourced from: https://www.youtube.com/watch?v=uR14UROzm-c&ab_channel=SimpleEnglishVideos</p>
+        </details>
+        <h3>Audio Version</h3>
+        <audio controls>
+            <source src="meetingaudio.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+</main>
+<div>
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Feedback Form</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="todaysdate">Today's Date:</label>
+            <input type="date" id="todaysdate" name="todaysdate"><br>
+
+            <input type="radio" id="dev" name="role" value="dev">
+            <label for="dev">Developer</label>
+            <input type="radio" id="design" name="role" value="design">
+            <label for="design">Designer</label><br>
+
+            <label for="feedback">Send me my responses:</label>
+            <input type="checkbox" id="feedback" name="feedback" value="yes"><br>
+
+            <label for="concern">Your feedback:</label>
+            <textarea id="concern" name="concern" rows="1" cols="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Legal</legend>
+
+            <label for="item">My lawsuit concerns:</label>
+            <input list="items" id="item" name="item">
+            <datalist id="items">
+                <option value="Class Action Suit">
+                <option value="Criminal Suit">
+                <option value="I'm not suing you">
+                <option value="Why is this here?">
+            </datalist><br>
+
+            <label for="terms">I accept the terms and conditions:</label>
+            <select id="terms" name="terms">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="maybe">Maybe So</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+<footer>
+    <details>
+        <summary>Copyright 2199 Meeting Minutes LLC</summary>
+        <p>It's still infringement if it's in the past, don't even think about it!</p>
+    </details>
+</footer>
+</div>
+</body>
+</html>
