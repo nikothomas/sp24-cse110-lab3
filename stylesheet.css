@@ -3,6 +3,7 @@
 :root {
     --background-color: color-mix(in lch, plum 1%, white);
 }
+
 h1 {
     color: rgb(255, 0, 0);
 }
@@ -157,4 +158,20 @@ header {
 section {
     background-color: #f0f0f0;
     padding: 10px;
+}
+/* Text color and font */
+@font-face {
+    font-family: 'Jersey';
+    src: url('Jersey10Charted-Regular.ttf') format('truetype');
+}
+
+body {
+    text-decoration: floralwhite;
+    text-align: left;
+    color: black;
+}
+
+nav{
+    font-family: 'Jersey', sans-serif;
+
 }
