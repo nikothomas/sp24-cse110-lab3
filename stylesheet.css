@@ -71,6 +71,7 @@ section {
 
 /* Apply border to all images */
 img {
+    display: inline-block;
     border-style: solid;
     border-color: #000;
     border-width: 2px;
@@ -79,36 +80,81 @@ img {
 
 /* Relative units */
 
-/* Using em */
 header {
     font-size: 2em;
 }
 
-/* Using rem */
 nav {
     font-size: 1.2rem;
     margin-top: 1rem;
 }
 
-/* Using vw */
 main {
     width: 87vw;
 }
 
 /* Absolute units */
 
-/* Using px */
 footer {
     font-size: 12px;
     padding: 10px;
 }
 
-/* Using cm */
 form {
     width: 10cm;
 }
 
-/* Using in */
 fieldset {
     border-width: 0.1in;
+}
+
+/* Sizing */
+header {
+    height: 20%;
+    width: 100%;
+}
+
+footer {
+    max-width: 800px;
+    min-width: 200px;
+}
+
+/* Positioning */
+footer {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+form {
+    position: static;
+}
+
+/* Flexbox layout */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: normal;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Grid layout */
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    justify-self: left;
+}
+
+section {
+    background-color: #f0f0f0;
+    padding: 10px;
 }
