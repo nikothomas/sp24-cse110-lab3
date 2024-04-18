@@ -5,7 +5,7 @@
 }
 
 h1 {
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 p {
@@ -14,9 +14,11 @@ p {
 h2{
     color: hsl(0, 100%, 0%);
 }
-h3{
+
+h2 {
     color: color(srgb 0 0 0);
 }
+
 h4{
     color: #000000;
 }
@@ -320,10 +322,4 @@ form {
         font-size: 1.2em;
         background-color: green;
     }
-}
-
-/* Custom properties for theme colors */
-:root {
-    --background-color: color-mix(in lch, plum 1%, white);
-    --highlight-color: #ff0;
 }
