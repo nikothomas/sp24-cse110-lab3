@@ -242,3 +242,88 @@ video, img {
     width: 100%;
     height: auto;
 }
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+    background-color: var(--background-color, white);
+}
+
+/* Class Selector */
+.header-main {
+    background-color: var(--background-color);
+}
+
+/* ID Selector */
+#mainContent {
+    padding: 10px;
+}
+
+/* Attribute Selector */
+input[type="submit"] {
+    background-color: var(--background-color);
+}
+
+/* Pseudo-class Selector */
+button:hover {
+    color: blue;
+}
+
+/* Selector List */
+nav, .footer {
+    margin: 20px;
+}
+
+/* Descendant Combinator */
+header nav {
+    color: blue;
+}
+
+/* Child Combinator */
+header > nav {
+    color: black;
+}
+
+/* General sibling combinator */
+h1 ~ p {
+    color: gray;
+}
+
+/* Adjacent sibling combinator */
+h2 + h3 {
+    color: black;
+}
+
+/* Combining Two Selectors */
+button.submit-button {
+    font-size: 1.5rem;
+}
+
+/* New Selector :has() */
+header:has(nav) {
+    background-color: var(--background-color);
+}
+
+/* Nested Selectors (using :has() and nested declarations) */
+div:has(> a.active) {
+    background-color: var(--background-color);
+}
+
+/* Nested Selectors (simple nesting approach) */
+form {
+    background-color: var(--background-color);
+    button {
+        font-size: 1.2em;
+        background-color: green;
+    }
+}
+
+/* Custom properties for theme colors */
+:root {
+    --background-color: color-mix(in lch, plum 1%, white);
+    --highlight-color: #ff0;
+}
