@@ -1,1 +1,22 @@
 /* This is the external stylesheet */
+/* Color */
+h1 {
+    color: rgb(255, 0, 0); /* red */
+}
+
+p {
+    color: black;
+}
+h2{
+    color: hsl(0, 100%, 0%);
+}
+h3{
+    color: color(srgb 0 0 0); /* Red color using the sRGB color space */
+}
+h4{
+    color: #000000;
+}
+/* Background */
+body {
+    background-color: color-mix(in lch, plum 1%, white);
+}
