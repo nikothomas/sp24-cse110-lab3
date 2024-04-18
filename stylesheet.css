@@ -4,7 +4,7 @@
     --background-color: color-mix(in lch, plum 1%, white);
 }
 h1 {
-    color: rgb(255, 0, 0); /* red */
+    color: rgb(255, 0, 0);
 }
 
 p {
@@ -14,7 +14,7 @@ h2{
     color: hsl(0, 100%, 0%);
 }
 h3{
-    color: color(srgb 0 0 0); /* Red color using the sRGB color space */
+    color: color(srgb 0 0 0);
 }
 h4{
     color: #000000;
@@ -22,4 +22,93 @@ h4{
 /* Background */
 body {
     background-color: var( --background-color, white);
+}
+
+/* Margin / spacing between html elements */
+
+/* Long version */
+nav, main, footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Short version */
+header{
+    margin: 20px;
+}
+
+/* Auto margins */
+form {
+    margin: auto;
+}
+
+/* Padding / spacing within html elements */
+
+/* Long version */
+header, nav, main, footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Short version */
+form {
+    padding: 10px;
+}
+
+/* Borders */
+
+/* Apply border to all sections */
+section {
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+/* Apply border to all images */
+img {
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+/* Relative units */
+
+/* Using em */
+header {
+    font-size: 2em;
+}
+
+/* Using rem */
+nav {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Using vw */
+main {
+    width: 87vw;
+}
+
+/* Absolute units */
+
+/* Using px */
+footer {
+    font-size: 12px;
+    padding: 10px;
+}
+
+/* Using cm */
+form {
+    width: 10cm;
+}
+
+/* Using in */
+fieldset {
+    border-width: 0.1in;
 }
